@@ -19,10 +19,10 @@ export default function Header() {
                 </div>
 
                 <div className="nav-part2">
-                    <Link href={"/"}>Home</Link>
-                    <Link href={"/"}>Create Blogs</Link>
-                    <Link href={"/"}>About Us</Link>
-                    <Link href={"/"}>Contact Us</Link>
+                    <Link href={"/"} className="nav-elements">Home</Link>
+                    <Link href={"/"} className="nav-elements">Create Blogs</Link>
+                    <Link href={"/"} className="nav-elements">About Us</Link>
+                    <Link href={"/"} className="nav-elements">Contact Us</Link>
                     <FontAwesomeIcon icon={faBars}  className="menu"/>
                 </div>
             </div>
