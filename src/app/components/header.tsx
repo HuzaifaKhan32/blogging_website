@@ -23,8 +23,8 @@ export default function Header() {
                     <Link href={"/"} className="nav-elements">Create Blogs</Link>
                     <Link href={"/"} className="nav-elements">About Us</Link>
                     <Link href={"/"} className="nav-elements">Contact Us</Link>
-                    <FontAwesomeIcon icon={faBars}  className="menu"/>
                 </div>
+                    <FontAwesomeIcon icon={faBars}  className="menu"/>
             </div>
         </>
     )
