@@ -12,33 +12,40 @@ import GSAP from "@/../public/GSAP.jpg"
 type Idata = {
   title: string,
   description: string,
-  image: StaticImageData
+  image: StaticImageData,
+  blogLink: string
 }
 
 const data: Idata[] = [{
   title: "Artificial Intelligence",
   description: "Artificial Intelligence (AI) enables machines to mimic human intelligence for tasks like decision-making and learning. It's transforming industries by processing vast data and providing insights, promising smarter and more efficient systems for the future.",
-  image: AI
+  image: AI,
+  blogLink: "/blog1"
 }, {
   title: "Tailwind CSS",
   description: "Tailwind CSS is a utility-first framework that simplifies web design with predefined classes. It helps developers create responsive, customizable layouts quickly, focusing on flexibility and mobile-first design. Tailwind CSS is very useful in creating designs.",
-  image: Tailwind
+  image: Tailwind,
+  blogLink: "/blog2"
 }, {
   title: "What is Programming?",
   description: "Programming is the process of writing code to instruct computers to perform tasks or solve problems. It uses languages like JavaScript or Python to create software and applications. Programmers write algorithms to automate processes and build digital solutions.",
-  image: Programming
+  image: Programming,
+  blogLink: "/blog3"
 }, {
   title: "Benefits Of Next.js",
   description: "Next.js is a powerful React framework that enables server-side rendering and static site generation, improving performance and SEO. It simplifies routing and API integration, making it easy to build fast, scalable web applications.",
-  image: Nextjs
+  image: Nextjs,
+  blogLink: "/blog4"
 }, {
   title: "Typescript",
   description: "TypeScript is a superset of JavaScript that adds static typing, helping developers catch errors during development. It improves code quality and makes large projects easier to manage. TypeScript is widely used for building scalable and reliable applications.",
-  image: Typescript
+  image: Typescript,
+  blogLink: "/blog5"
 }, {
   title: "What is GSAP?",
   description: "GSAP (GreenSock Animation Platform) is a JavaScript library for creating fast, high-performance animations on websites. It allows developers to animate elements like images and text with smooth transitions. GSAP is widely used for enhancing user interfaces with dynamic effects.",
-  image: GSAP
+  image: GSAP,
+  blogLink: "/blog6"
 },]
 const App = () => {
   return (
@@ -67,7 +74,7 @@ const App = () => {
               <div className="title">{elem.title}</div>
               <p>{elem.description}</p>
               <div className="readmore-parent">
-                <Link href={"/blog1"} className="readmore">Read more</Link>
+                <Link href={elem.blogLink} className="readmore">Read more</Link>
               </div>
             </div>
           ))}
